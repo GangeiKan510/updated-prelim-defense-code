@@ -1,0 +1,33 @@
+.card {
+  margin: auto !important;
+  margin-top: 1rem !important;
+  text-align: center !important;
+}
+
+a {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.bi {
+  margin: 1rem;
+}
+
+.card {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.form-control {
+  border: none;
+  background-color: #f6f6f6;
+  margin-bottom: 1rem;
+}
+
+
+.buttons {
+  display: inline-block;
+}

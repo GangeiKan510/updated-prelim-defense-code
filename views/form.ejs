@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+  <form action="/form" method="post">
+    <div class="card" style="width: 18rem;">
+      First Name
+      <input name="firstname" type="text" id="username" class="form-control" placeholder="first name" aria-label="Username" aria-describedby="basic-addon1">
+      Last Name
+      <input name="lastname" type="text" id="password" class="form-control" placeholder="last name" aria-label="Username" aria-describedby="basic-addon1">
+      <div class="buttons">
+        <button id="cancel" type="button" class="btn btn-danger">cancel</button>
+        <button type="submit" class="btn btn-primary">save</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    document.getElementById("cancel").onclick = function () {
+     location.href = "/";
+    };
+  </script>
+<%- include("partials/footer") -%>

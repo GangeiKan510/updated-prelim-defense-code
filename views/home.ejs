@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe's Deathnote</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="list.css">
+</head>
+<body>
+  <div class="card button-card" style="width: 18rem;">
+    <button id="to-form" type="button" class="btn btn-primary">Add</button>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      People
+    </div>
+    <ul class="list-group list-group-flush">
+      <% listItems.forEach((element) => { %>
+        <li class="list-group-item"><%= element.firstname%> <%= element.lastname%></li>
+      <% }) %>
+    </ul>
+  </div>
+  <script>
+    document.getElementById("to-form").onclick = function () {
+     location.href = "/form";
+    };
+  </script>
+<%- include("partials/footer") -%>
+
