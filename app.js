@@ -65,11 +65,11 @@ app.post('/login', (req, res) => {
   if (username === 'admin' && password === 'root') {
       res.redirect('/');
   } else if (username === '' || password.value === '') {
-      alert("You did not enter any data.");
+      res.send("You did not enter any data. Please try again.");
   } else if (username.length <= 3 || password.length <= 3) {
-      alert("Password or Username must be longer than 3 characters.");
+      res.send("Password or Username must be longer than 3 characters. Please try again.");
   } else {
-      alert("Invalid credentials.");
+      res.send("Sorry, invalid credentials.");
   }
 });
 
